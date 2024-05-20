@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <h1>Welcome,</h1>
+    <p id="userName"></p>
+    <p id="userEmail">User Email : </p>
+    <p id="userPassword">User Password : </p>
+    <script>
+        var userName = localStorage.getItem('username')
+        var userEmail = localStorage.getItem('email')
+        var userPassword = localStorage.getItem('password')
+        document.getElementById('userName').innerText += userName
+        document.getElementById('userEmail').innerText += userEmail
+        document.getElementById('userPassword').innerText += userPassword
+    </script>
+</body>
+</html>
